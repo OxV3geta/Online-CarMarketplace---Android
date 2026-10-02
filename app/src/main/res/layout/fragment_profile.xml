@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/PreviewTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <FrameLayout
+            android:layout_width="92dp"
+            android:layout_height="92dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp">
+
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_input"
+                android:contentDescription="Profile Photo" />
+
+            <TextView
+                android:id="@+id/changePhotoText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="CHANGE\nPHOTO"
+                android:textColor="@color/text_primary"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:background="#80000000"
+                android:visibility="gone"
+                android:clickable="true"
+                android:focusable="true" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="Profile settings"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="Update your demo account details"
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Name"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Full name"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Email"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Email"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="Phone"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/phoneInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Phone"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="15sp"
+            android:singleLine="true" />
+
+        <CheckBox
+            android:id="@+id/notificationsCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="  Enable notifications"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:buttonTint="@color/lime"
+            android:checked="true" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="14dp"
+            android:text="SAVE CHANGES"
+            android:textColor="@color/dark_bg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button" />
+
+        <TextView
+            android:id="@+id/logoutButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Log out"
+            android:textColor="@color/danger"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+</ScrollView>

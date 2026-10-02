@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "998546572942",
+    "project_id": "online-car-marketplace-f0f1b",
+    "storage_bucket": "online-car-marketplace-f0f1b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998546572942:android:3207b6e5f21680efd12bdf",
+        "android_client_info": {
+          "package_name": "com.example.carmarketplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998546572942-hnmdodmehn782l043m6cl6s7bp2d7kt8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.carmarketplace",
+            "certificate_hash": "60503176ef30e58fe9e9e2e17c8ee1cbf5f5aefe"
+          }
+        },
+        {
+          "client_id": "998546572942-ivuoqunop2n8l2u8neet9g3ecp74e78r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRckkB0i6MVLAtKxReSePaUIM1MGCn1DY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998546572942-ivuoqunop2n8l2u8neet9g3ecp74e78r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

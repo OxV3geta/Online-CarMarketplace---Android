@@ -1,0 +1,12 @@
+<resources>
+    <color name="lime">#C7FF00</color>
+    <color name="dark_bg">#0B0F12</color>
+    <color name="dark_card">#151A1E</color>
+    <color name="dark_card_2">#1C2227</color>
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#AAB2B8</color>
+    <color name="border">#2A3238</color>
+    <color name="danger">#FF5B5B</color>
+    <color name="route_primary">#00E5FF</color> <!-- Neon Electric Cyan for Map Route -->
+    <color name="route_alternative">#546E7A</color> <!-- Dark Slate Grey for Alt Routes -->
+</resources>

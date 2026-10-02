@@ -1,0 +1,19 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:statusBarColor">?android:attr/colorBackground</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:navigationBarColor">?android:attr/colorBackground</item>
+        <item name="android:colorAccent">@color/lime</item>
+    </style>
+
+    <!-- Android Studio Layout Editor only. Does not affect the running app. -->
+    <style name="PreviewTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:colorAccent">@color/lime</item>
+        <item name="android:windowBackground">@color/dark_bg</item>
+        <item name="android:navigationBarColor">@color/dark_bg</item>
+        <item name="android:statusBarColor">@color/dark_bg</item>
+    </style>
+</resources>

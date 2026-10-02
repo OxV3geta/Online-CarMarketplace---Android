@@ -1,0 +1,13 @@
+<resources>
+    <!-- Light Mode Colors -->
+    <color name="lime">#7BCC00</color> <!-- Darker lime for white background contrast -->
+    <color name="dark_bg">#F2F4F7</color> <!-- Light grey background -->
+    <color name="dark_card">#FFFFFF</color> <!-- White card -->
+    <color name="dark_card_2">#E8EAED</color>
+    <color name="text_primary">#1A1C1E</color> <!-- Black text -->
+    <color name="text_secondary">#5F6368</color> <!-- Grey text -->
+    <color name="border">#DADCE0</color> <!-- Light grey border -->
+    <color name="danger">#D93025</color> <!-- Darker red for light mode -->
+    <color name="route_primary">#00B0FF</color> <!-- Electric Cyan Blue for Map Route -->
+    <color name="route_alternative">#78909C</color> <!-- Slate Grey for Alt Routes -->
+</resources>

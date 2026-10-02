@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.carmarketplace'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.carmarketplace"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
+        exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
+    }
+}
+
+dependencies {
+
+    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.22')
+
+    implementation platform('com.google.firebase:firebase-bom:34.18.0')
+
+    // AndroidX Activity
+    implementation 'androidx.activity:activity-ktx:1.9.0'
+
+    // AndroidX
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.11.0'
+
+    // Constraint Layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+
+    // Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth'
+
+    // Firebase Storage
+    implementation 'com.google.firebase:firebase-storage'
+
+    // Cloud Firestore
+    implementation 'com.google.firebase:firebase-firestore'
+
+    // Google Sign In
+    implementation 'com.google.android.gms:play-services-auth:21.2.0'
+
+
+    // Google Maps & Location
+    implementation 'com.google.android.gms:play-services-maps:18.2.0'
+
+    implementation 'com.google.android.gms:play-services-location:21.1.0'
+
+    implementation 'com.google.maps.android:android-maps-utils:3.8.2'
+
+
+    // Glide for image loading
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+}

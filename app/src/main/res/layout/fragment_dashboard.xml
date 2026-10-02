@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/PreviewTheme"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/dark_bg"
+
+    android:fillViewport="true">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:padding="18dp">
+
+
+        <!-- ================================= -->
+        <!-- PAGE TITLE -->
+        <!-- ================================= -->
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+
+            android:text="Find your next car"
+
+            android:textColor="@color/text_primary"
+
+            android:textSize="27sp"
+
+            android:textStyle="bold" />
+
+
+        <!-- ================================= -->
+        <!-- SUBTITLE -->
+        <!-- ================================= -->
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:text="Browse cars from trusted sellers"
+
+            android:textColor="@color/text_secondary"
+
+            android:textSize="14sp" />
+
+
+        <!-- ================================= -->
+        <!-- SEARCH BAR -->
+        <!-- ================================= -->
+
+        <LinearLayout
+
+            android:id="@+id/searchBar"
+
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+
+            android:layout_marginTop="14dp"
+
+            android:orientation="horizontal"
+
+            android:background="@drawable/bg_input"
+
+            android:paddingStart="12dp"
+
+            android:paddingEnd="6dp"
+
+            android:gravity="center_vertical">
+
+
+            <EditText
+
+                android:id="@+id/searchInput"
+
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+
+                android:layout_weight="1"
+
+                android:hint="Search make, model or location"
+
+                android:textColor="@color/text_primary"
+
+                android:textColorHint="@color/text_secondary"
+
+                android:background="@android:color/transparent"
+
+                android:textSize="14sp"
+
+                android:singleLine="true"
+
+                android:imeOptions="actionSearch" />
+
+
+            <TextView
+
+                android:id="@+id/searchButton"
+
+                android:layout_width="52dp"
+
+                android:layout_height="44dp"
+
+                android:gravity="center"
+
+                android:text="⌕"
+
+                android:textColor="@color/dark_bg"
+
+                android:textSize="26sp"
+
+                android:textStyle="bold"
+
+                android:background="@drawable/bg_button"
+
+                android:clickable="true"
+
+                android:focusable="true" />
+
+        </LinearLayout>
+
+
+        <!-- ================================= -->
+        <!-- SEARCH HELP -->
+        <!-- ================================= -->
+
+        <TextView
+
+            android:id="@+id/searchHint"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="35dp"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Try: Toyota, Corolla, Honda, Dhaka or 2024"
+
+            android:textColor="@color/text_secondary"
+
+            android:textSize="12sp"
+
+            android:gravity="center_vertical" />
+
+
+        <!-- ================================= -->
+        <!-- FEATURED TITLE -->
+        <!-- ================================= -->
+
+        <TextView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginTop="15dp"
+
+            android:text="Featured cars"
+
+            android:textColor="@color/text_primary"
+
+            android:textSize="19sp"
+
+            android:textStyle="bold"
+
+            android:gravity="center_vertical" />
+
+
+        <!-- ================================= -->
+        <!-- FEATURED CARS -->
+        <!-- ================================= -->
+
+        <HorizontalScrollView
+
+            android:layout_width="match_parent"
+
+            android:layout_height="230dp"
+
+            android:scrollbars="none">
+
+
+            <LinearLayout
+
+                android:id="@+id/featuredCarsRow"
+
+                android:layout_width="wrap_content"
+
+                android:layout_height="match_parent"
+
+                android:orientation="horizontal" />
+
+        </HorizontalScrollView>
+
+
+        <!-- ================================= -->
+        <!-- RESULT TITLE -->
+        <!-- ================================= -->
+
+        <TextView
+
+            android:id="@+id/resultTitle"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="50dp"
+
+            android:layout_marginTop="20dp"
+
+            android:text="All cars"
+
+            android:textColor="@color/text_primary"
+
+            android:textSize="19sp"
+
+            android:textStyle="bold"
+
+            android:gravity="center_vertical" />
+
+
+        <!-- ================================= -->
+        <!-- ALL / SEARCH RESULT CARS -->
+        <!-- ================================= -->
+
+        <LinearLayout
+
+            android:id="@+id/allCarsList"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical" />
+
+
+    </LinearLayout>
+
+</ScrollView>
+

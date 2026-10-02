@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Car Marketplace</string>
+    <!-- Placeholder for Google Sign-In. Replace with your actual Web Client ID from Firebase Console -->
+    <string name="default_web_client_id">998546572942-ivuoqunop2n8l2u8neet9g3ecp74e78r.apps.googleusercontent.com</string>
+</resources>

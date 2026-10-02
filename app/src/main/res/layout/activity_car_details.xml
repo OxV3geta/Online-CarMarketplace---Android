@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/PreviewTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+
+        <!-- BACK BUTTON -->
+
+        <TextView
+            android:id="@+id/backButton"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="‹  Back"
+            android:textColor="@color/text_primary"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- CAR IMAGE -->
+
+        <ImageView
+            android:id="@+id/detailCarImage"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/car1"
+            android:contentDescription="Car image" />
+
+
+        <!-- CAR NAME -->
+
+        <TextView
+            android:id="@+id/detailCarName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="18dp"
+            android:text="Toyota Corolla"
+            android:textColor="@color/text_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+
+        <!-- PRICE -->
+
+        <TextView
+            android:id="@+id/detailCarPrice"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="৳ 28,50,000"
+            android:textColor="@color/lime"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+
+        <!-- BASIC INFORMATION -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/bg_card">
+
+
+            <TextView
+                android:id="@+id/detailCarYear"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Year: 2024"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:gravity="center_vertical" />
+
+
+            <TextView
+                android:id="@+id/detailCarLocation"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Location: Dhaka"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+
+        <!-- SPECIFICATIONS TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="Car Specifications"
+            android:textColor="@color/text_primary"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+
+        <!-- SPECIFICATIONS -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@drawable/bg_card">
+
+
+            <!-- BODY TYPE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Body Type"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/detailBodyType"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="SUV"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|end" />
+
+            </LinearLayout>
+
+
+            <!-- FUEL -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Fuel Type"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/detailFuel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Petrol"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|end" />
+
+            </LinearLayout>
+
+
+            <!-- TRANSMISSION -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Transmission"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/detailTransmission"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Automatic"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|end" />
+
+            </LinearLayout>
+
+
+            <!-- MILEAGE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Mileage"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/detailMileage"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="25,000 km"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|end" />
+
+            </LinearLayout>
+
+
+            <!-- ENGINE -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Engine"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/detailEngine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2.0L"
+                    android:textColor="@color/text_primary"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|end" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- COST ANALYZER & CONTACT BUTTONS -->
+
+        <Button
+            android:id="@+id/btnCostAnalyzer"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_input"
+            android:text="📊 View 5-Year Ownership Cost Analysis"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/contactButton"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp"
+            android:text="Contact Seller"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_bg"
+            android:background="@drawable/bg_button" />
+
+    </LinearLayout>
+
+</ScrollView>

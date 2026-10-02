@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:theme="@style/PreviewTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Sell your car"
+            android:textColor="@color/text_primary"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create a listing in a few steps."
+            android:textColor="@color/text_secondary"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Car make &amp; model"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/makeModelInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="e.g. Toyota Corolla"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Year"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/yearInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="2024"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:inputType="number" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Price"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/priceInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="$ 25,000"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="14sp"
+            android:singleLine="true"
+            android:inputType="numberDecimal" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Location"
+            android:textColor="@color/text_secondary"
+            android:textSize="11sp" />
+
+        <EditText
+            android:id="@+id/locationInput"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="Dhaka"
+            android:paddingStart="14dp"
+            android:paddingEnd="14dp"
+            android:textColor="@color/text_primary"
+            android:textColorHint="@color/text_secondary"
+            android:background="@drawable/bg_input"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/postListingButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="20dp"
+            android:text="POST LISTING"
+            android:textColor="@color/dark_bg"
+            android:textStyle="bold"
+            android:background="@drawable/bg_button" />
+
+    </LinearLayout>
+</ScrollView>

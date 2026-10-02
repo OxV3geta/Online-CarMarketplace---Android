@@ -1,0 +1,31 @@
+# Gradle & Build files
+.gradle/
+build/
+app/build/
+/build
+/app/build
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ IDEA files
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navFolder.xml
+.idea/assetWizardSettings.xml
+.idea/deploymentTargetDropDown.xml
+.idea/deviceStreaming.xml
+*.iml
+*.iws
+
+# Built APKs & Bundles
+*.apk
+*.aar
+*.aab
+
+# OS / Temp generated
+.DS_Store
+Thumbs.db
+/tmp/

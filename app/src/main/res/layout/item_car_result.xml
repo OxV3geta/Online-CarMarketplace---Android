@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:theme="@style/PreviewTheme"
+
+    android:layout_width="match_parent"
+    android:layout_height="125dp"
+
+    android:layout_marginBottom="12dp"
+
+    android:orientation="horizontal"
+
+    android:padding="10dp"
+
+    android:background="@drawable/bg_card"
+
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <!-- ================================= -->
+    <!-- CAR IMAGE -->
+    <!-- ================================= -->
+
+    <ImageView
+
+        android:id="@+id/carImage"
+
+        android:layout_width="125dp"
+        android:layout_height="105dp"
+
+        android:scaleType="centerCrop"
+
+        android:src="@drawable/car2"
+
+        tools:src="@drawable/preview_car"
+
+        android:contentDescription="Car result" />
+
+
+    <!-- ================================= -->
+    <!-- CAR INFORMATION -->
+    <!-- ================================= -->
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+
+        android:paddingStart="12dp">
+
+
+        <!-- CAR NAME -->
+
+        <TextView
+
+            android:id="@+id/carName"
+
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+
+            android:text="Toyota Corolla"
+
+            android:textColor="@color/text_primary"
+
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+
+            android:gravity="center_vertical" />
+
+
+        <!-- YEAR AND LOCATION -->
+
+        <TextView
+
+            android:id="@+id/carInfo"
+
+            android:layout_width="match_parent"
+            android:layout_height="27dp"
+
+            android:text="2024  •  Dhaka"
+
+            android:textColor="@color/text_secondary"
+
+            android:textSize="12sp"
+
+            android:gravity="center_vertical" />
+
+
+        <!-- PRICE -->
+
+        <TextView
+
+            android:id="@+id/carPrice"
+
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+
+            android:text="৳ 28,50,000"
+
+            android:textColor="@color/lime"
+
+            android:textSize="16sp"
+
+            android:textStyle="bold"
+
+            android:gravity="center_vertical" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
